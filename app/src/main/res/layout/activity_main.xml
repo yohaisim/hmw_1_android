@@ -1,0 +1,263 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <!-- lives -->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_centerHorizontal="true">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_life1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_life2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star1" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/main_IMG_life3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/star1" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+<!--spaceship-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/main_IMG_spaceship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_spaceshipLeft"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/spaceship1_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_spaceshipMiddle"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/spaceship1_1" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/main_IMG_spaceshipRight"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/spaceship1_1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <!-- obstacle matrix -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/obstacle_matrix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_1_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_1_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_1_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_2_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_2_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_2_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_3_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_3_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_3_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_4_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_4_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_4_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_5_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_5_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/obstacle_5_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/alien" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--buttons-->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginBottom="32dp">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/main_BTN_left"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitStart"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/left"
+            android:contentDescription="@string/left_button_desc"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:layout_width="@dimen/default_margin"
+            android:layout_height="0dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/main_BTN_right"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitEnd"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/right"
+            android:contentDescription="@string/right_button_desc"
+            android:background="@android:color/transparent" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>

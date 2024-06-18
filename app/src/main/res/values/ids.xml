@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_obstacles" type="id" />
+    <item name="obstacle_1_1" type="id" />
+    <item name="obstacle_1_2" type="id" />
+    <item name="obstacle_1_3" type="id" />
+    <item name="obstacle_2_1" type="id" />
+    <item name="obstacle_2_2" type="id" />
+    <item name="obstacle_2_3" type="id" />
+    <item name="obstacle_3_1" type="id" />
+    <item name="obstacle_3_2" type="id" />
+    <item name="obstacle_3_3" type="id" />
+    <item name="obstacle_4_1" type="id" />
+    <item name="obstacle_4_2" type="id" />
+    <item name="obstacle_4_3" type="id" />
+    <item name="obstacle_5_1" type="id" />
+    <item name="obstacle_5_2" type="id" />
+    <item name="obstacle_5_3" type="id" />
+</resources>

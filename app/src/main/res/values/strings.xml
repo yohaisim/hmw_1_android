@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Yohai_Simhony_HW1</string>
+    <string name="left_button_desc">Move left</string>
+    <string name="right_button_desc">Move right</string>
+</resources>
