@@ -2,4 +2,9 @@
     <string name="app_name">Yohai_Simhony_HW1</string>
     <string name="left_button_desc">Move left</string>
     <string name="right_button_desc">Move right</string>
+    <string name="high_scores">High Scores</string>
+    <string name="sensor_mode">Sensor Mode</string>
+    <string name="slow_speed">Slow Speed</string>
+    <string name="fast_speed">Fast Speed</string>
+    <string name="logo_image" />
 </resources>
