@@ -66,16 +66,22 @@ public class MainActivity extends AppCompatActivity {
     private boolean sensorMode = false;
     private SensorManager sensorManager;
     private SensorEventListener sensorEventListener;
-
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private LatLng currentLocation;
     private MediaPlayer collisionSound, coinSound;
+    private MediaPlayer mediaPlayer;
+
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        mediaPlayer = MediaPlayer.create(this, R.raw.music);
+        mediaPlayer.setLooping(true);
+        mediaPlayer.start();
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         collisionSound = MediaPlayer.create(this, R.raw.hitsound);
@@ -132,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         startObstacleMovement();
         requestLocationUpdates();
     }
+
 
 
     @Override
@@ -502,7 +509,13 @@ public class MainActivity extends AppCompatActivity {
             collisionSound.release();
             collisionSound = null;
         }
+        if (mediaPlayer != null) {
+            mediaPlayer.stop();
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
     }
+
 
     private void requestLocationUpdates() {
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);

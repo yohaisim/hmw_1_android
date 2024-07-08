@@ -30,6 +30,7 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_score"
+                android:fontFamily="@font/zambira"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
@@ -37,11 +38,13 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_location"
+                android:fontFamily="@font/zambira"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/text_date"
+                android:fontFamily="@font/zambira"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/background"
+    android:background="@drawable/background2"
     tools:context=".MenuActivity"
     android:gravity="center">
 
@@ -31,7 +31,7 @@
             android:text="@string/fast_speed"
             android:background="@android:color/transparent"
             android:textColor="#FF6D00"
-            android:fontFamily="@font/ka1"
+            android:fontFamily="@font/zambira"
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -42,7 +42,7 @@
             android:text="@string/slow_speed"
             android:background="@android:color/transparent"
             android:textColor="#FF6D00"
-            android:fontFamily="@font/ka1"
+            android:fontFamily="@font/zambira"
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -53,7 +53,7 @@
             android:text="@string/sensor_mode"
             android:background="@android:color/transparent"
             android:textColor="#FF6D00"
-            android:fontFamily="@font/ka1"
+            android:fontFamily="@font/zambira"
             android:textSize="24sp" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -63,7 +63,7 @@
             android:text="@string/high_scores"
             android:background="@android:color/transparent"
             android:textColor="#FF6D00"
-            android:fontFamily="@font/ka1"
+            android:fontFamily="@font/zambira"
             android:textSize="24sp" />
 
     </LinearLayout>
